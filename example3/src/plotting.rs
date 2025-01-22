@@ -1,3 +1,5 @@
+// Based on https://github.com/feral-dot-io/leptos-chartistry/blob/master/demo/src/examples/series_line.rs (MPL-2.0 license)
+
 use leptos::prelude::*;
 use leptos_chartistry::*;
 use leptos_chartistry::IntoInner;
@@ -21,16 +23,17 @@ pub fn SimulationPlot() -> impl IntoView {
 
     // Lines are added to the series
     let series = Series::new(|data: &MyData| data.x)
-        .line(Line::new(|data: &MyData| data.y1).with_name("butterflies"))
-        .line(Line::new(|data: &MyData| data.y2).with_name("dragonflies"));
+        .line(Line::new(|data: &MyData| data.y1).with_name("AAA"))
+        .line(Line::new(|data: &MyData| data.y2).with_name("BBB"));
     view! {
+        <h1>Plot with Leptos Chartistry</h1>
         <Chart
-            aspect_ratio=AspectRatio::from_outer_height(300.0, 1.2)
+            aspect_ratio=AspectRatio::from_outer_height(500.0, 1.2)
             series=series
             data=data
 
             // Decorate our chart
-            top=RotatedLabel::middle("My garden")
+            top=RotatedLabel::middle("My stocks")
             left=TickLabels::aligned_floats()
             bottom=Legend::end()
             inner=[

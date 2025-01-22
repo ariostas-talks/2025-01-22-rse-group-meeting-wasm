@@ -8,7 +8,7 @@ fn main() {
     let res_data = edg_inputs::load_fuels_input(2030);
     let df_print = res_data.to_string().replace("\n", "<br/>");
     leptos::mount::mount_to_body(move || view! {
-        <h2>"Loaded data frame with Polars"</h2>
+        <h1>"Loaded dataframe with Polars"</h1>
         <div inner_html=df_print></div> 
     });
 

@@ -1,3 +1,5 @@
+// Based on https://github.com/oxfordcontrol/Clarabel.rs/blob/main/examples/rust/example_box.rs (Apache-2.0 license)
+
 #![allow(non_snake_case)]
 use clarabel::algebra::*;
 use clarabel::solver::*;
@@ -66,14 +68,14 @@ pub fn ExampleProblem() -> impl IntoView {
     };
 
     view! {
-        <h1>"Solving with Clarabel"</h1>
+        <h1>"Solving conic optimization with Clarabel"</h1>
         <form on:submit=on_submit>
             <input 
                 type="text"
                 value=n
                 node_ref=input_element
             />
-            <input type="submit" value="Compute Fn"/>
+            <input type="submit" value="Run optimizer"/>
         </form>
         <p>{res}</p>
     }
