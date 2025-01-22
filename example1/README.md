@@ -2,7 +2,7 @@
 
 ## Requirements
 
-Download and activate `emsdk`. Instructions can be found in the [repo](https://github.com/emscripten-core/emsdk).
+Download and activate `emsdk` (or use the submodule in this directory). Instructions can be found in the [repo](https://github.com/emscripten-core/emsdk).
 
 ## Compile to WASM
 
