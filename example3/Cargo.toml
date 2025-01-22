@@ -1,0 +1,11 @@
+[package]
+name = "edg-rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clarabel = { version = "0.9.0", features = ["wasm"] }
+leptos = { version = "0.7.2", features = ["csr"] }
+leptos-chartistry = "0.2.0"
+polars-core = { version = "0.45.1", features = ["fmt_no_tty"] }
+polars-io = { version = "0.45.1", features = ["csv"] }
