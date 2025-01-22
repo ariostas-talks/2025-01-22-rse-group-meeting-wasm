@@ -90,7 +90,7 @@ The two options you'll run into are Emscripten and WASI.
 ### WASI
 
 - Stands for WebAssembly System Interface
-- It is a set of POSIX-like standards for WASM
+- It is a set of interface standards for WASM
 - It moves slowly and it is still pretty limited
 - It will be very powerful in the future
 
